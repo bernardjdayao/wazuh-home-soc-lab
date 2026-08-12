@@ -54,7 +54,7 @@ Much like the 05-new-service.md exercise, this handles a persistence issue that 
 - Level: 5
 
 ## Evidence
-![alt text](image-4.png)
+![Scheduled Task Alert](image/scheduledtask.png)
 
 ## Lessons Learned
 I learned a lot in this exercise, mostly because there are a lot of ways to configure what you want to monitor inside the Configuration File of Wazuh. I encountered manually entering the command and having to know why Wazuh is not reflecting the command and also had to research on how I can track the events. Once I knew the right configuration for the test, the test was able to be completed. The scheduled service was created and it is such a learning experience because an attacker can slip right through and have a somewhat of a backdoor inside the compromised system with that specific scheduled service so making sure that there is telemetry with types of attacks is very important as well.

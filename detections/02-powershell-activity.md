@@ -21,7 +21,7 @@ Get-ChildItem $env:USERPROFILE\Downloads
 Get-NetTCPConnection
 ```
 
-![alt text](<Screenshot 2026-08-11 154227.png>)
+![Powershell Activity Alert](<images/powershellact.png>)
 
 ## Lessons Learned
 I learned that of course inside a certain group will have the privilege to access the Command Prompt or the Powershell, monitoring activities that are done inside the CLI environment should also be monitored because people who know what they are doing especially when it comes to accessing and running shell commands hold so much power, so monitoring shell commands is also a key aspect of a SOC Analyst.

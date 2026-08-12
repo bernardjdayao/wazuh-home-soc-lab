@@ -35,7 +35,7 @@ The remarks from ID, Level and Description are the same when creating the User a
 - Level: 12
 
 ## Evidence
-![alt text](<Screenshot 2026-08-11 174557.png>)
+![Escalated Account Alert](<images/escalatedacc.png>)
 
 ## Lesson Learned
 The lesson I learned from this exercise is that a newly created account may not pose an immediate threat because it is a usual thing to have an account be made especially if it is the season for it. What is unusual for this is for an account to be created and be escalated to being an administrator which typically has the rights to view and modify critical data. Looking at this exercise this way, I am able to determine whether an attack is happening or it was approved by management, of course, depending on how granularized and modularized the roles are in an organization, then through this pattern I can know if its an attack or not, granted that there are multiple factors that I need to consider.

@@ -50,8 +50,7 @@ For Deleting:
 - Level: 7
 
 ## Evidence
-![alt text](image-1.png)
-![alt text](image.png)
+![FIM Alert](images/FIMAlert.png)
 
 ## Investigation
 The alert was investigated through the Wazuh Dashboard and the underlying Wazuh alert logs to confirm Wazuh Indexer connectivity.

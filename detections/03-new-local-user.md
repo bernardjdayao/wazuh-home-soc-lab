@@ -55,7 +55,7 @@ upon User Deletion:
 To briefly explain what these mean, upon user creation, the logs showe that there were a change with regards to the user because we set a password and it logged that as well hence the reflected log in the dashboard. The created user is assigned a group (Guest) that is why the user group changed. Upon deletion, there was a log that the Domain Users Group Changed, this was due to the fact that there are no more accounts in the "Guest" group so Windows has to adjust removing the account of its membership to a certain group
 
 ## Evidence
-![alt text](image-2.png)
+![New Local User Alert](images/usermanagement.png)
 
 ## Lessons Learned
 I learned that we can also use SIEMs to closely monitor account management. I can track some behavioral patterns one may have when managing accounts and base a diagnosis off of the fact that there are unusual tendencies the logs may or may not inherit. A distinct pattern recognition should help me recognize what is unusual and what is not.

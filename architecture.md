@@ -18,4 +18,4 @@ Although this architecture is smaller than a production SOC environment, it prov
 
 Most importantly, the architecture prioritizes functionality and learning within hardware constraints. Rather than attempting to reproduce a large enterprise environment that my current machine cannot comfortably support, I chose a smaller architecture that allows me to actively experiment with the system, generate security events, investigate them through Wazuh, and gradually expand the lab as additional resources become available.
 
-![alt text](image.png)
+![Architectural Diagram](images/diagram.png)
