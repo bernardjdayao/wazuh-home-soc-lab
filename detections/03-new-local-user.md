@@ -7,15 +7,21 @@ The goal is to exercise account management in this scenario as a SOC Analyst.
 To verify that the user was indeed reflected both in the dashboard and in the agent side, we run these commands in the Powershell:
 
 To create an account:
+```powershell
 net user soc-test "LabPassword123!" /add
+```
 
 To check if it reflected in the machine:
+```powershell
 net user soc-test "LabPassword123!" /add
+```powershell
 
 We should be able to see the user "soc-test" displayed back to us with a default belonging to the group "Guest"
 
 To delete the account: 
+```powershell
 net user soc-test /delete
+```
 
 ## Result
 In Wazuh Dashboard,

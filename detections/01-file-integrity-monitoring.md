@@ -23,9 +23,11 @@ test-create.txt
 The file was subsequently modified and deleted.
 
 Commands used via Powershell:
+```powershell
 "Created by Wazuh lab" | Out-File "$env:USERPROFILE\Downloads\test-create.txt"
 "Modified by Wazuh lab" | Out-File "$env:USERPROFILE\Downloads\test-create.txt" -Append
 Remove-Item "$env:USERPROFILE\Downloads\test-create.txt"
+```
 
 ## Detection
 Wazuh generated:

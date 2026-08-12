@@ -8,13 +8,19 @@ Try to download Sysmon as to try to double check the SIEM logs as well as the lo
 
 ## Detection
 Create your custom service. I created a custom service which just simply opens Notepad
+```powershell
 sc.exe create WazuhLabService binPath= "C:\Windows\System32\notepad.exe"
+```
 
 Check whether or not it exists
+```powershell
 sc.exe create WazuhLabService binPath= "C:\Windows\System32\notepad.exe"
+```
 
 Then delete it
+```powershell
 sc.exe create WazuhLabService binPath= "C:\Windows\System32\notepad.exe"
+```
 
 ## Result
 The logs show that there are newly made services.

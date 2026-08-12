@@ -5,11 +5,15 @@ The goal of this exercise is to observe the pattern of a brute-force attack
 
 ## Detection
 First, to replicate a failed login, use the command "runas" in Powershell as it is the easiest way to replicate a logon prompt as if we are signing in to a machine with valid credentials.
+```powershell
 runas /user:%USERNAME% cmd
+```
 
 Enter the password incorrectly and observe the response. It should respond as follows:
+```powershell
 RUNAS ERROR: Unable to run - cmd
 1326: The user name or password is incorrect.
+```
 
 ## Result
 This attack pattern can very well just be a brute force attack, if we do not have the right guardrails to defend against this type of attack then a powerful enough computer can break this with just time. Though it has an alert level of 5, we must not for a second let down our guard.

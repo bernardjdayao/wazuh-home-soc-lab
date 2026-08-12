@@ -11,15 +11,21 @@ Again, create the user and verify its existence both in Wazuh Dashboard and in t
 Once the account is created, use this Powershell command to escalate an account and change the group to where it belongs from Guest to Administrator:
 
 Change user group to Administrator:
+```powershell
 net localgroup Administrators soc-test /add
+```
 
 Then make sure to investigate it in the Event Viewer as well as the Wazuh Dashboard. 
 
 Try deleting it and once more, investigate the Event Viewer and Wazuh Dashboard.
+```powershell
 net localgroup Administrators soc-test /delete
+```
 
 Then delete the account:
+```powershell
 net user soc-test /delete
+```
 
 ## Result
 The remarks from ID, Level and Description are the same when creating the User as seen from the evidence. The differnce is that there is a new log saying that there were changes made pertaining to the Administrators Group. Take note that I moved the freshly created account to the Administrators Group and removed it to see how Wazuh would react and it used a Level of 12 which directly labels as something that I need to look at as it is a Medium Alert

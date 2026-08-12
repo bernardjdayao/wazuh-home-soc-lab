@@ -14,10 +14,12 @@ To verify its detection, we can go to Event Viewer > Applications and Services L
 
 ## Result
 Results showed activity in the Wazuh Threat Hunting Module, there were Powershell activity with the following script that queried system environment variables. This could be anything like looking up processes, services, etc. This was done in a controlled manner using these commands:
+```powershell
 Get-Process
 Get-Service
 Get-ChildItem $env:USERPROFILE\Downloads
 Get-NetTCPConnection
+```
 
 ![alt text](<Screenshot 2026-08-11 154227.png>)
 
